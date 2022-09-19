@@ -6,6 +6,7 @@
     "node" : "16.x"
   },
   "scripts": {
+    "heroku-postbuild": "nx build $PROJECT_NAME --prod",
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
     "start": "node dist/apps/api/main",
